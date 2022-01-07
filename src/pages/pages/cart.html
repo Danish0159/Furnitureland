@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>FurnitureLand</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header" class="header">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand">
+                <img src="./img/logo.png" alt="company logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2 ">
+                        <a href="index.html" class="nav-link text-capitalize">home</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                        <a href="products.html" class="nav-link text-capitalize">products</a>
+                    </li>
+                    <li class="nav-item mx-2 nav-active">
+                        <a href="cart.html" class="nav-link text-capitalize">Store</a>
+                    </li>
+                </ul>
+                <div class="navbar-icons d-lg-flex">
+                    <a href="#" class="navbar-icon mx-2 navbar-cart-icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512"
+                            height="1em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M624 208h-64v-64c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v64h-64c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h64v64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64h64c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm-400 48c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" class="navbar-icon mx-2 navbar-cart-icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+                            height="1em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
+                            </path>
+                        </svg>
+                        <div class="cart-items">2</div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+        <!-- banner -->
+        <div class="banner-store d-flex justify-content-center align-items-center pl-3 pl-lg-5 text-center">
+            <div>
+                <h1 class="text-capitalize text-yellow text-slanted display-4">FurnitureLand</h1>
+                <h1 class="text-capitalize font-weight-bold display-4">
+                    our store
+                </h1>
+            </div>
+        </div>
+        <!--end of banner -->
+    </header>
+    <!--end of header -->
+
+    <!-- totals -->
+    <section class="totals py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-uppercase text-center">
+                    <!-- row 1 -->
+                    <div class="row">
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <p class="text-uppercase">products</p>
+                        </div>
+                        <!-- end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <p class="text-uppercase">name of products</p>
+                        </div>
+                        <!-- end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <p class="text-uppercase">price</p>
+                        </div>
+                        <!-- end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <p class="text-uppercase">quantity</p>
+                        </div>
+                        <!-- end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <p class="text-uppercase">total</p>
+                        </div>
+                        <!-- end of single column -->
+                    </div>
+                    <!-- end of row 1 -->
+                    <hr>
+                    <!-- row 2 -->
+                    <div class="row align-items-center">
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <img src="./img/img-products/product-1.png" alt="" class="img-fluid">
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-4">
+                            <p class="text-uppercase">comfortable chair</p>
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <p>$100.00</p>
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2 align-self-center">
+                            <!-- buttons -->
+                            <div class="d-flex justify-content-center">
+                                <span class="btn btn-black mx-1">-</span>
+                                <span class="btn btn-black mx-1">4</span>
+                                <span class="btn btn-black mx-1">+</span>
+                            </div>
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <p>$1000.00</p>
+                        </div>
+                        <!--end of single column -->
+                    </div>
+                    <!--end of row 2 -->
+                    <hr>
+                    <!-- row 3 -->
+                    <div class="row align-items-center">
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <img src="./img/img-products/product-2.png" alt="" class="img-fluid">
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-4">
+                            <p class="text-uppercase">comfortable chair</p>
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <p>$100.00</p>
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2 align-self-center">
+                            <!-- buttons -->
+                            <div class="d-flex justify-content-center">
+                                <span class="btn btn-black mx-1">-</span>
+                                <span class="btn btn-black mx-1">4</span>
+                                <span class="btn btn-black mx-1">+</span>
+                            </div>
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <p>$1000.00</p>
+                        </div>
+                        <!--end of single column -->
+                    </div>
+                    <!--end of row 3 -->
+                    <hr>
+                    <!-- row 4 -->
+                    <div class="row align-items-center">
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <img src="./img/img-products/product-3.png" alt="" class="img-fluid">
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-4">
+                            <p class="text-uppercase">comfortable chair</p>
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <p>$100.00</p>
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2 align-self-center">
+                            <!-- buttons -->
+                            <div class="d-flex justify-content-center">
+                                <span class="btn btn-black mx-1">-</span>
+                                <span class="btn btn-black mx-1">4</span>
+                                <span class="btn btn-black mx-1">+</span>
+                            </div>
+                        </div>
+                        <!--end of single column -->
+                        <!-- single column -->
+                        <div class="col-10 mx-auto col-md-2">
+                            <p>$1000.00</p>
+                        </div>
+                        <!--end of single column -->
+                    </div>
+                    <!--end of row 4 -->
+                    <hr>
+                    <!-- row 5 -->
+                    <div class="row">
+                        <div class="col col-sm-6 mx-auto d-flex justify-content-center align-self-center flex-wrap">
+                            <button type="button" class="text-capitalize btn btn-black my-2">
+                                continue shopping
+                            </button>
+                            <button type="button" class="text-capitalize btn btn-yellow ml-3 my-2">
+                                checkout
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of row 5 /end of cart button -->
+                    <div class="row my-3">
+                        <div class="col mx-auto col-sm-8 col-md-6 col-lg-6">
+                            <div class="card card-body text-uppercase bg-secondary">
+                                <div class="card-title text-white">
+                                    <h6>cart total</h6>
+                                </div>
+                                <!-- single row -->
+                                <div class="row">
+                                    <div class="col-6">sub total</div>
+                                    <div class="col-6">$900.00</div>
+                                </div>
+                                <!-- end of single row -->
+                                <!-- single row -->
+                                <div class="row">
+                                    <div class="col-6">tax</div>
+                                    <div class="col-6">$123.00</div>
+                                </div>
+                                <!-- end of single row -->
+                                <!-- single row -->
+                                <div class="row">
+                                    <div class="col-6">shipping </div>
+                                    <div class="col-6">$86.00</div>
+                                </div>
+                                <!-- end of single row -->
+                                <!-- single row -->
+                                <div class="row">
+                                    <div class="col-6 my-3">order total</div>
+                                    <div class="col-6 my-3 text-warning">$10.000</div>
+                                </div>
+                                <!-- end of single row -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of totals -->
+
+    <!-- footer -->
+    <footer class="footer py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto text-center">
+                    <h1 class="text-uppercase font-size bold footer-title text-center text-yellow d-inline-block">
+                        FurnitureLand
+                    </h1>
+
+                    <!-- footer icons -->
+                    <div class="d-flex justify-content-center my-5">
+                        <!-- single icon -->
+                        <a href="#" class="footer-icon mx-3">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <!--end of single icon -->
+                        <!-- single icon -->
+                        <a href="#" class="footer-icon mx-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <!--end of single icon -->
+                        <!-- single icon -->
+                        <a href="#" class="footer-icon mx-2">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                        <!--end of single icon -->
+                        <!-- single icon -->
+                        <a href="#" class="footer-icon mx-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <!--end of single icon -->
+                        <!-- single icon -->
+                        <a href="#" class="footer-icon mx-2">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <!--end of single icon -->
+                    </div>
+                    <!-- end of footer icons -->
+                    <p class="w-75 mx-auto text-muted text-capitalize text-center">
+                        FurnitureLand promises hassle free delivery right from the moment you order to when your package
+                        is dropped at your
+                        door.
+                    </p>
+                    <div class="footer-contact mt-5 d-block d-sm-flex justify-content-around">
+                        <!-- single contact -->
+                        <div class="text-capitalize text-success mx-2">
+                            <span class="footer-icon mr-2">
+                                <i class="fas fa-map"></i>
+                            </span> 123 main street, los angeles
+                        </div>
+                        <!-- end of single contact -->
+                        <!-- single contact -->
+                        <div class="text-capitalize text-success mx-2">
+                            <span class="footer-icon mr-2">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <span>
+                                phone: (123) 456 789
+                            </span>
+                        </div>
+                        <!-- end of single contact -->
+                        <!-- single contact -->
+                        <div class="text-capitalize text-success mx-2">
+                            <span class="footer-icon mr-2">
+                                <i class="fas fa-envelope"></i>
+                            </span> email: email@email.com
+                        </div>
+                        <!-- end of single contact -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!--end of footer -->
+
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
