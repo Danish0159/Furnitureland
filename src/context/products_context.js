@@ -14,7 +14,6 @@ import {
   GET_SINGLE_PRODUCT_ERROR,
 } from '../actions'
 
-
 const initialState = {
   isSidebarOpen: false,
   products_loading: false,
@@ -25,6 +24,7 @@ const initialState = {
   single_product_error: false,
   single_product: {},
 }
+
 
 const ProductsContext = React.createContext()
 
@@ -45,7 +45,6 @@ export const ProductsProvider = ({ children }) => {
         ...state,
         openSidebar,
         closeSidebar,
-        // fetchSingleProduct,
       }}
     >
       {children}

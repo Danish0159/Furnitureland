@@ -18,6 +18,8 @@ const products_reducer = (state, action) => {
     return { ...state, isSidebarOpen: false }
   }
 
+
+  return
   throw new Error(`No Matching "${action.type}" - action type`)
 }
 

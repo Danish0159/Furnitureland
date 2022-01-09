@@ -5,7 +5,6 @@ import { Home, Products, SingleProduct, About, Cart, Error, Checkout, PrivateRou
 
 function App() {
   return (
-
     <Router>
       <Navbar></Navbar>
       <Sidebar></Sidebar>
@@ -32,7 +31,6 @@ function App() {
       </Switch>
       <Footer></Footer>
     </Router>
-
   )
 }
 

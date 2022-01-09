@@ -12,14 +12,8 @@ const Hero = () => {
         Comfort Zone
       </h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at sed omnis corporis doloremque possimus velit! Repudiandae nisi odit, aperiam odio ducimus, obcaecati libero et quia tempora excepturi quis alias?</p>
-
-
-
       <Link to="/products" className="btn hero-btn">SHOP NOW</Link>
-
-
     </article>
-
     <article className="img-container">
       <img src={heroBcg} alt="nice table" className="main-img" />
       <img src={heroBcg2} alt="person working" className="accent-img" />

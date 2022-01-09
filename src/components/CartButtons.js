@@ -7,9 +7,10 @@ import { useCartContext } from '../context/cart_context'
 import { useUserContext } from '../context/user_context'
 
 const CartButtons = () => {
+  const { closeSidebar } = useProductsContext();
   return <Wrapper className='cart-btn-wrapper'>
     {/* In mobile menu on clicking the cart we want to go to the cart page and close the sidebar. */}
-    <Link to='/cart' className='cart-btn'>
+    <Link to='/cart' className='cart-btn' onClick={closeSidebar}>
       Cart
       <span className='cart-container'>
         <FaShoppingCart />
@@ -18,7 +19,7 @@ const CartButtons = () => {
     </Link>
 
     <button type='button'
-      className='auth-btn'>
+      className='auth-btn' onClick={closeSidebar}>
       Login <FaUserPlus></FaUserPlus>
     </button>
 
