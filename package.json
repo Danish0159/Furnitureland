@@ -1,9 +1,7 @@
 {
-  "name": "furnitureland",
-  "version": "1.0.0",
+  "name": "store",
+  "version": "0.1.0",
   "private": true,
-  "description": "React Js Ecommerce Project",
-  "main": "index.js",
   "dependencies": {
     "@auth0/auth0-react": "^1.2.0",
     "@stripe/react-stripe-js": "^1.1.2",
@@ -46,7 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "author": "Danish",
-  "license": "ISC"
+  }
 }
