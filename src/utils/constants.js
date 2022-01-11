@@ -43,7 +43,8 @@ export const services = [
 ]
 
 
-
+// End point for all the products.
 export const products_url = 'https://course-api.com/react-store-products'
 
+// End point for a single product.
 export const single_product_url = `https://course-api.com/react-store-single-product?id=`

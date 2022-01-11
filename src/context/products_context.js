@@ -39,6 +39,24 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: SIDEBAR_CLOSE })
   }
 
+  const fetchProducts = async (url) => {
+    dispatch({ type: GET_PRODUCTS_BEGIN });
+
+    try {
+      const responce = await axios.get(url);
+      const products = responce.data;
+      console.log(products);
+      dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products });
+    } catch (error) {
+      dispatch({ type: GET_PRODUCTS_ERROR });
+    }
+  }
+
+  useEffect(() => {
+    fetchProducts(url);
+  }, [])
+
+
   return (
     <ProductsContext.Provider
       value={{
