@@ -25,7 +25,6 @@ const initialState = {
   single_product: {},
 }
 
-
 const ProductsContext = React.createContext()
 
 export const ProductsProvider = ({ children }) => {
@@ -45,10 +44,20 @@ export const ProductsProvider = ({ children }) => {
     try {
       const responce = await axios.get(url);
       const products = responce.data;
-      console.log(products);
       dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products });
     } catch (error) {
       dispatch({ type: GET_PRODUCTS_ERROR });
+    }
+  }
+
+  const fetchSingleProduct = async (url) => {
+    dispatch({ type: GET_SINGLE_PRODUCT_BEGIN });
+    try {
+      const responce = await axios.get(url);
+      const singleProduct = responce.data;
+      dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct });
+    } catch (error) {
+      dispatch({ type: GET_SINGLE_PRODUCT_ERROR })
     }
   }
 
@@ -56,13 +65,13 @@ export const ProductsProvider = ({ children }) => {
     fetchProducts(url);
   }, [])
 
-
   return (
     <ProductsContext.Provider
       value={{
         ...state,
         openSidebar,
         closeSidebar,
+        fetchSingleProduct,
       }}
     >
       {children}
