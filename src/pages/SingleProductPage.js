@@ -51,7 +51,7 @@ const SingleProductPage = () => {
 
       <section className="content">
         <h2>{name}</h2>
-        <Stars></Stars>
+        <Stars stars={stars} reviews={reviews}></Stars>
         <h5 className='price'>{formatPrice(price)}</h5>
         <p className="desc">{description}</p>
 
@@ -70,7 +70,7 @@ const SingleProductPage = () => {
           {company}
         </p>
         <hr />
-        {stock > 0 && <AddToCart></AddToCart>}
+        {stock > 0 && <AddToCart product={product}></AddToCart>}
       </section>
 
     </div>
